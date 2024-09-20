@@ -12,5 +12,21 @@ In this case study, I will be working as an NLP engineer for a financial company
 
 ## Dataset
 You can download the dataset from https://drive.google.com/file/d/1qTVu7y8QTtN2_XNOK1NnGVqteEfXMA-m/view?usp=drive_link.
+
 Although the dataset contains 22 features but only complaint text is valuable for us and since Topic Modelling is a unsupervised learning problem so the labels are not given. We have find the significant labels/category for each complaints.
+
+
+## Text Preprocessing
+Before analysis, we should process the text data so that we will get valuable insights and information from dataset for further extraction and prediction. Text preprocessing involves 3 main steps:
+1. Data Cleaning (Removing Brackets, Punctuations, Numbers and special characters)
+2. Lemmatization
+3. Parts of Speech (POS) Tagging
+
+
+## Exploratory Data Analysis
+This process helps to analyse the data and extract valuable insights and information from dataset. This process includes plotting of wordcloud to check the most frequent word occuring in the complaints and then visualize top 30 unigrams, bigrams and trigrams.
+
+
+
+
 
