@@ -24,9 +24,28 @@ Before analysis, we should process the text data so that we will get valuable in
 
 
 ## Exploratory Data Analysis
-This process helps to analyse the data and extract valuable insights and information from dataset. This process includes plotting of wordcloud to check the most frequent word occuring in the complaints and then visualize top 30 unigrams, bigrams and trigrams.
+This process helps to analyse the data and extract valuable insights and information from dataset. This process includes plotting of wordcloud to check the most frequent word occurring in the complaints and then visualize top 30 unigrams, bigrams and trigrams.
+
+
+## Feature Extraction
+As we cannot feed text data directly to NMF, we have to convert it into numerical values. So, to convert text data into numerical features we use TF-IDF (Term Frequency-Inverse Document Frequency) vectorization method.
+
+
+## Dimensionality Reduction and Topic Modelling using NMF
+Since text data can have high dimensionality, Non-Negative Matrix Factorization (NMF) is applied to reduce the number of features while maintaining meaningful latent structures in the data. This method also helps in choosing a significant number of topics after checking the 20 common words belonging to each topic and finally map relevant/significant topic to each complaint.
+
+
+## Build a Supervised Leaning Model for making a prediction for new complaint
+After mapping the significant topic to ecah complaint we have implemented various machine learning algorithms (Naive Bayes, Logistic Regression, Decision Tree, and Random Forest) on the training data and then evaluated using accuracy, precision, recall, F1-score and Confusion Matrix. Since, Logistic Regression Model have highest accuracy (93%) and F1-score (92.6%), We conclude that the Logistic Regression model is best for making a prediction on custom complaints data. Finally, Logistic Regression model is then selected for deployment. 
+
+
+## Final Deployment using Gradio
+Gradio provides an easy-to-use interface for real-time interaction with the model. We deploy the final classification model using a Gradio interface, allowing users to enter ticket descriptions and get predictions on the ticket category. Here is the video of live deployment.
 
 
 
+
+
+https://github.com/user-attachments/assets/7e15c30d-63dd-4c9a-a67f-ee60623d99e2
 
 
