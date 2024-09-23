@@ -49,3 +49,5 @@ Gradio provides an easy-to-use interface for real-time interaction with the mode
 https://github.com/user-attachments/assets/7e15c30d-63dd-4c9a-a67f-ee60623d99e2
 
 
+# Final Blog Post
+https://sshivam-singh96.medium.com/automating-ticket-classification-with-nlp-nmf-and-machine-learning-a-step-towards-smarter-54ce3f3b6dc9
